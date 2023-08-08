@@ -40,10 +40,5 @@
 			<type>2</type>
 			<location>/home/rleblond/matplotlib-cpp</location>
 		</link>
-		<link>
-			<name>python3.11.4</name>
-			<type>2</type>
-			<location>/home/rleblond/python3.11.4</location>
-		</link>
 	</linkedResources>
 </projectDescription>

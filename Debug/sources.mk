@@ -23,7 +23,5 @@ OBJS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-python3.11.4/lib/python3.11/config-3.11-x86_64-linux-gnu \
-python3.11.4/lib/python3.11/test \
 src \
 

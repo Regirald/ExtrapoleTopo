@@ -115,46 +115,46 @@ int main() {
     }
 
 
-//
-//
-//    // Affichage des résultats en 3D
-//    plt::figure_size(1500, 600);
-//
-//    // Convertir les tableaux Eigen::ArrayXXd en vecteurs std::vector pour plot_surface
-//    std::vector<std::vector<double>> grid_x_vec(size, std::vector<double>(size));
-//    std::vector<std::vector<double>> grid_y_vec(size, std::vector<double>(size));
-//    std::vector<std::vector<double>> grid_z1_vec(size, std::vector<double>(size));
-//    std::vector<std::vector<double>> grid_z2_vec(size, std::vector<double>(size));
-//
-//    for (int i = 0; i < size; ++i) {
-//        for (int j = 0; j < size; ++j) {
-//            grid_x_vec[i][j] = grid_x(i, j);
-//            grid_y_vec[i][j] = grid_y(i, j);
-//            grid_z1_vec[i][j] = grid_z1(i, j);
-//            grid_z2_vec[i][j] = grid_z2(i, j);
-//        }
-//    }
-//
-////    std::vector<double> all_points_x_vec(all_points.col(0).data(), all_points.col(0).data() + all_points.rows());
-////    std::vector<double> all_points_y_vec(all_points.col(1).data(), all_points.col(1).data() + all_points.rows());
-//
-//
-//    // Affichage du noise original
-//    plt::subplot(1, 3, 1);
-//    plt::plot_surface(grid_x_vec, grid_y_vec, noise, {{"cmap", "viridis"}});
-//    //plt::scatter(all_points_x_vec, all_points_y_vec, 1, {{"c", "k"}}); // Utilisation de scatter avec les vecteurs std::vector
-//    plt::title("Original Noise");
-//
-//    plt::subplot(1, 3, 2);
-//    plt::plot_surface(grid_x_vec, grid_y_vec, grid_z1_vec, {{"cmap", "viridis"}});
-//    plt::title("Linear");
-//
-//    plt::subplot(1, 3, 3);
-//    plt::plot_surface(grid_x_vec, grid_y_vec, grid_z2_vec, {{"cmap", "viridis"}});
-//    plt::title("Cubic");
-//
-//    plt::tight_layout();
-//    plt::show();
+
+
+    // Affichage des résultats en 3D
+    plt::figure_size(1500, 600);
+
+    // Convertir les tableaux Eigen::ArrayXXd en vecteurs std::vector pour plot_surface
+    std::vector<std::vector<double>> grid_x_vec(size, std::vector<double>(size));
+    std::vector<std::vector<double>> grid_y_vec(size, std::vector<double>(size));
+    std::vector<std::vector<double>> grid_z1_vec(size, std::vector<double>(size));
+    std::vector<std::vector<double>> grid_z2_vec(size, std::vector<double>(size));
+
+    for (int i = 0; i < size; ++i) {
+        for (int j = 0; j < size; ++j) {
+            grid_x_vec[i][j] = grid_x(i, j);
+            grid_y_vec[i][j] = grid_y(i, j);
+            grid_z1_vec[i][j] = grid_z1(i, j);
+            grid_z2_vec[i][j] = grid_z2(i, j);
+        }
+    }
+
+//    std::vector<double> all_points_x_vec(all_points.col(0).data(), all_points.col(0).data() + all_points.rows());
+//    std::vector<double> all_points_y_vec(all_points.col(1).data(), all_points.col(1).data() + all_points.rows());
+
+
+    // Affichage du noise original
+    plt::subplot(1, 3, 1);
+    plt::plot_surface(grid_x_vec, grid_y_vec, noise, {{"cmap", "viridis"}});
+    //plt::scatter(all_points_x_vec, all_points_y_vec, 1, {{"c", "k"}}); // Utilisation de scatter avec les vecteurs std::vector
+    plt::title("Original Noise");
+
+    plt::subplot(1, 3, 2);
+    plt::plot_surface(grid_x_vec, grid_y_vec, grid_z1_vec, {{"cmap", "viridis"}});
+    plt::title("Linear");
+
+    plt::subplot(1, 3, 3);
+    plt::plot_surface(grid_x_vec, grid_y_vec, grid_z2_vec, {{"cmap", "viridis"}});
+    plt::title("Cubic");
+
+    plt::tight_layout();
+    plt::show();
 
     return 0;
 }

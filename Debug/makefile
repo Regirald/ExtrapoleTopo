@@ -9,8 +9,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/subdir.mk
--include python3.11.4/lib/python3.11/test/subdir.mk
--include python3.11.4/lib/python3.11/config-3.11-x86_64-linux-gnu/subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C++_DEPS)),)
 -include $(C++_DEPS)
@@ -57,7 +55,7 @@ main-build: ExtrapoleTopo
 ExtrapoleTopo: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/home/rleblond/Python-3.11.4 -o "ExtrapoleTopo" $(OBJS) $(USER_OBJS) $(LIBS) -lpython3.11
+	g++ -L/home/rleblond/Python-3.10.0/env/lib/python3.10 -o "ExtrapoleTopo" $(OBJS) $(USER_OBJS) $(LIBS) -lpython3.10
 	@echo 'Finished building target: $@'
 	@echo ' '
 

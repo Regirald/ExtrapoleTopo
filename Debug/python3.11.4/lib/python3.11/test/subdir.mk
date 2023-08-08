@@ -17,7 +17,7 @@ OBJS += \
 python3.11.4/lib/python3.11/test/_testcppext.o: /home/rleblond/python3.11.4/lib/python3.11/test/_testcppext.cpp python3.11.4/lib/python3.11/test/subdir.mk
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I/home/rleblond/eclipse-workspace/ExtrapoleTopo/includes -I"/home/rleblond/matplotlib-cpp" -I/home/rleblond/.local/lib/python3.10/site-packages/numpy/core/include/numpy -I"/home/rleblond/libInterpolate/src/libInterpolate" -I"/home/rleblond/eigen-3.4.0/Eigen2" -I/home/rleblond/eigen-3.4.0/Eigen -I/usr/include/boost -I/home/rleblond/python3.11.4/include/python3.11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	g++ -I/home/rleblond/eclipse-workspace/ExtrapoleTopo/includes -I"/home/rleblond/matplotlib-cpp" -I/home/rleblond/.local/lib/python3.10/site-packages/numpy/core/include/numpy -I"/home/rleblond/libInterpolate/src/libInterpolate" -I"/home/rleblond/eigen-3.4.0/Eigen2" -I/home/rleblond/eigen-3.4.0/Eigen -I/usr/include/boost -I/home/rleblond/Python-3.10.0/env/include/python3.10 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
