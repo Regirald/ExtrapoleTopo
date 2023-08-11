@@ -25,14 +25,13 @@
 								<option defaultValue="gnu.cpp.compiler.debugging.level.max" id="gnu.cpp.compiler.exe.debug.option.debugging.level.1911410155" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.798021047" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/home/rleblond/eclipse-workspace/ExtrapoleTopo/includes"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ExtrapoleTopo/matplotlib-cpp}&quot;"/>
 									<listOptionValue builtIn="false" value="/home/rleblond/.local/lib/python3.10/site-packages/numpy/core/include/numpy"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ExtrapoleTopo/spline/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ExtrapoleTopo/libInterpolate}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ExtrapoleTopo/eigen-3.4.0/Eigen2}&quot;"/>
-									<listOptionValue builtIn="false" value="/home/rleblond/eigen-3.4.0/Eigen"/>
 									<listOptionValue builtIn="false" value="/usr/include/boost"/>
 									<listOptionValue builtIn="false" value="/home/rleblond/Python-3.10.0/env/include/python3.10"/>
+									<listOptionValue builtIn="false" value="/home/rleblond/eigen-3.4.0"/>
+									<listOptionValue builtIn="false" value="/home/rleblond/libInterpolate/src/libInterpolate"/>
+									<listOptionValue builtIn="false" value="/home/rleblond/matplotlib-cpp"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.786471810" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -61,8 +60,6 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="libInterpolate"/>
-						<entry excluding="CMakeFiles|examples" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="matplotlib-cpp"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>

@@ -24,21 +24,4 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>eigen-3.4.0</name>
-			<type>2</type>
-			<location>/home/rleblond/eigen-3.4.0</location>
-		</link>
-		<link>
-			<name>libInterpolate</name>
-			<type>2</type>
-			<location>/home/rleblond/libInterpolate/src/libInterpolate</location>
-		</link>
-		<link>
-			<name>matplotlib-cpp</name>
-			<type>2</type>
-			<location>/home/rleblond/matplotlib-cpp</location>
-		</link>
-	</linkedResources>
 </projectDescription>
