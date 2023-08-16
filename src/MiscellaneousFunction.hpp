@@ -131,17 +131,17 @@ std::tuple<vector<double>, vector<double>, vector<double>> GenerateXYZ(){
 }
 
 // !! We assume the grid is always centered on its center !!
-double GetTopo(int x, int y, double flow_dir, int size_l, int size_L){
+double GetTopo(int x, int y, double flow_dir, int size_l, int size_L, double maxExtentionCoeff){
 
 	double diago = sqrt(size_l*size_l + size_L*size_L);
 	// Calcul of the maximal extention on the grid in the flow_dir ortogonal direction
 	double reste = abs(fmod(flow_dir, M_PI/2));
 	double H;
 	if (reste >M_PI/4 ){
-		H = diago*cos(M_PI/4 + M_PI/4 -reste);
+		H = diago*maxExtentionCoeff;
 	}
 	else{
-		H = diago*cos(M_PI/4 -reste);
+		H = diago*maxExtentionCoeff;
 	}
 	Point center({50, 50, 0});
 	Point current({x, y, 0});
